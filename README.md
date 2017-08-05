@@ -1,7 +1,15 @@
 # vsh
 TCL script for Cisco routers that parses out all parts of specified VRF including vpn/crypto, nat, routing, and acl config.
 
-This program is used to parse the CISCO IOS config and show only configuration elements relevant for specified VRF. It can be selected which element to display, either only VRF definition ('def' keyword), or routing element ('routing|bgp|ospf|rip|eigrp|static|crypto|nat') or interface ('interface' keyword). Any ACL, prefix-list or route-map referenced in the relevant config part will also be shown.
+This program is used to parse the CISCO IOS config and show only configuration elements relevant for specified VRF. It can be selected which element to display:
+* VRF definition ('def' keyword)
+* A routing element ('routing|bgp|ospf|rip|eigrp|static')
+* Interface ('interface' keyword) 
+* VPN ('crypto' keyword)
+* Nat Static/Dynamic ('nat' keyword)
+* All VRF Config ('all' keyword)
+
+Any ACL, prefix-list, route-map, crypto-map, or nat referenced in the relevant config part will also be shown.
 
 * It can be run directly on the router or you can download the config to a server and run it against the config on the server. 
 * It has been extensively tested running directly on a Cisco 7609. 
