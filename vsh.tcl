@@ -6,12 +6,16 @@
 # AUTHOR        : D.Koncic, davor.koncic@eds.com, Wayne Gatlin, wayne@razorcla.ws
 # VERSION       : 1.2
 #                 vsh.tcl, 8.12.2013
-# This program is used to parse the CISCO IOS config and show only 
-# configuration elements relevant for specified VRF. It can be selected
-# which element to display, either only VRF definition ('def' keyword),
-# or routing element ('routing|bgp|ospf|rip|eigrp|static|crypto|nat') or interface
-# ('interface' keyword). Any ACL, prefix-list or route-map referenced in
-# the relevant config part will also be shown.
+#
+# This program is used to parse the CISCO IOS config and show only configuration elements relevant for specified VRF. It can be selected which element to display:
+# * VRF definition ('def' keyword)
+# * A routing element ('routing|bgp|ospf|rip|eigrp|static')
+# * Interface ('interface' keyword) 
+# * VPN ('crypto' keyword)
+# * Nat Static/Dynamic ('nat' keyword)
+# * All VRF Config ('all' keyword)
+# 
+# Any ACL, prefix-list, route-map, crypto-map, or nat referenced in the relevant config part will also be shown.
 #
 # ios config:
 #
