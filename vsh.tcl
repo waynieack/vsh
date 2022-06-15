@@ -102,7 +102,7 @@ set incvasipeerint 1
 
 # Exclude the vasi peer interface in the config output for certain VRFs when incvasipeerint is enabled.
 # Add the VRF name to the array.
-set filtervasipeerint {v3110 v3404 v3405 v3106}
+set filtervasipeerint {ExcludedVrfName2 ExcludedVrfName2}
 
 # Include static routes in global routing table for the crypto peer IP in the requested VRF. Set to 1 to enable.
 set incglobalpeerroutes 0
